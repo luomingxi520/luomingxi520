@@ -1,0 +1,8 @@
+root = tk.Tk()
+cv = tk.Canvas(root, height=height, width=width)
+cv.create_rectangle(0, 0, width, height, fill="black")
+
+cv.pack()
+
+root.after(50, show,cv)
+root.mainloop()
