@@ -1,0 +1,10 @@
+ /* Gets the MSISDN from the header and returns as a string. */ 
+  public String getMSISDN(HttpServletRequest request) 
+  { 
+    return request.getHeader("<key to retrieve>"); 
+  } 
+ 
+  /* This method is not implemented. */ 
+  public String getUniqueId(HttpServletRequest req)throws WAPGatewayException 
+  { 
+    throw new WAPGatewayException("This method is not implemented"); 
