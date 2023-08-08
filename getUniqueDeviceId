@@ -1,0 +1,15 @@
+     return (String)fInfo.get("password"); 
+    } 
+    public void setPassword(String param1) { 
+        if (param1 != null) 
+            fInfo.put("password", param1); 
+    } 
+ 
+   public String getUniqueDeviceId(){ 
+            return (String)fInfo.get("UniqueDeviceId"); 
+   } 
+   public void setUniqueDeviceId(String uniqueId){ 
+            if (uniqueId != null)  
+                fInfo.put("UniqueDeviceId", uniqueId); 
+   } 
+  
