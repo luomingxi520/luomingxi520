@@ -1,0 +1,22 @@
+ public Date getDeActivateDate() { 
+        return (Date)fInfo.get("deactivateDate"); 
+    } 
+    public void setDeActivateDate(Date param1) { 
+        if (param1 != null) 
+            fInfo.put("deactivateDate", param1); 
+    } 
+ 
+	public String getSalutation() { 
+	    return (String)fInfo.get("salutation"); 
+	} 
+	public void setSalutation(String param1) { 
+	if (param1 != null) 
+	    fInfo.put("salutation", param1); 
+	} 
+ 
+    public boolean isEnabled() { 
+        return Boolean.valueOf((String)fInfo.get("enabled")).booleanValue(); 
+    } 
+    public void setIsEnabled(boolean param1) { 
+        fInfo.put("enabled", String.valueOf(param1)); 
+    } 
