@@ -1,0 +1,14 @@
+public String getMobileId(){ 
+	        return (String)fInfo.get("MobileId"); 
+	}  
+	public void setMobileId(String mobileId) { 
+	        if (mobileId != null)  
+	            fInfo.put("MobileId", mobileId); 
+	} 
+     
+    public boolean isPrepay() { 
+		Boolean isprepay = (Boolean)fInfo.get("isPrepay"); 
+		return isprepay.booleanValue(); 
+    }  
+	public void setIsPrepay(boolean param1) { 
+		fInfo.put("isPrepay", new Boolean(param1)); 
