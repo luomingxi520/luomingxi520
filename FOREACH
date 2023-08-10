@@ -1,0 +1,10 @@
+ FOREACH(itr, sealedFilesUsage)
+    {
+        LogicalFileId fileId = itr->fileId;
+        const FileUsage* usage = baseMap->GetFileUsage(fileId);
+        const File* file = fileSet->GetFile(fileId);
+        targetFileSize += usage->blocks * mBlockSize;
+        sourceFileCnt++;
+ 
+        if (targetFileSize > sealedFileMaxSize || sourceFileCnt > sealedFileMaxNum)
+        {
