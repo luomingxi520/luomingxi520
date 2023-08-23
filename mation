@@ -1,0 +1,4 @@
+// Iterate through each ContentInfo object and update the 
+    // information that is shown to the user when a list of 
+    // content is shown. 
+    return inContentInfos; 
