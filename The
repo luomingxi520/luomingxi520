@@ -1,0 +1,5 @@
+/ operatorproxy.properties 
+                // The following assume you implemented a class OperatorProxyProperties 
+    // to read the configuration values. 
+ 
+		String hostname = Oper
